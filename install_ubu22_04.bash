@@ -10,9 +10,9 @@ tarball="ubuntu-22.04-server-cloudimg-arm64-wsl.rootfs.tar.gz"
 
 termux-setup-storage
 
-if [ "$first" != 1]; then
+if [ "$first" != 1 ]; then
 	if [ ! -f $tarball ]; then
-		echo "downloading Rootfs"
+		echo "Downloading Rootfs"
 		case `dpkg --print-architecture` in
 		aarch64)
 			archurl="arm64" ;;

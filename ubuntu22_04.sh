@@ -25,7 +25,7 @@ if [ "$first" != 1 ]; then
 		*)
 			echo "unknown architecture"; exit 1 ;;
 		esac
-		wget "https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-$(archurl)-wsl.rootfs.tar.gz" -O $tarball
+		wget "https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-${archurl}-wsl.rootfs.tar.gz" -O $tarball
 	fi
 	mkdir -p "$folder"
 	cd "$folder"

@@ -20,5 +20,5 @@ echo "fixing shebang of start-ubuntu22_04.sh"
 termux-fix-shebang start-ubuntu22_04.sh
 echo "making start-ubuntu22_04.sh executable"
 chmod +x start-ubuntu22_04.sh
-clear
+
 echo "You can now launch Ubuntu with the ubuntu22_04.sh script form next time" 

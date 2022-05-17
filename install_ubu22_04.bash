@@ -12,7 +12,7 @@ termux-setup-storage
 
 if ["$first" != 1];then
 	if [ ! -f $tarball ];then
-		echo 'downloading Rootfs'
+		echo "downloading Rootfs"
 		case `dpkg --print-architecture` in
 		aarch64)
 			archurl="arm64" ;;

@@ -11,4 +11,5 @@ archurl="amd64" ;;
 *)
 echo "unknown architecture"; exit 1 ;;
 esac
+echo "test"
 wget "https://github.com/AndronixApp/AndronixOrigin/raw/master/Rootfs/Ubuntu20/focal-${archurl}.tar.gz" -O $tarball

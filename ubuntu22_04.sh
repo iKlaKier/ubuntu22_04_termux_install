@@ -15,7 +15,7 @@ if [ "$first" != 1 ]; then
 		echo "Downloading Rootfs"
 		case `dpkg --print-architecture` in
 		aarch64)
-			archurl="arm64" ;;
+			wget "https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-arm64-wsl.rootfs.tar.gz" -O $tarball ;;
 		arm)
 			archurl="armhf" ;;
 		amd64)
@@ -25,7 +25,7 @@ if [ "$first" != 1 ]; then
 		*)
 			echo "unknown architecture"; exit 1 ;;
 		esac
-		wget "https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-${archurl}-wsl.rootfs.tar.gz" -O $tarball
+		
 	fi
 	mkdir -p "$folder"
 	cd "$folder"

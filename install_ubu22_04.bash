@@ -1,4 +1,4 @@
-#! /data/data/com.termux/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 pkg install wget -y
 folder=ubuntu22_04-fs
 cur=`pwd`
